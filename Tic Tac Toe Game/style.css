@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --choco: #9a4d16;
+    --winning-blocks: rgb(219, 205, 187);
+}
+
+body {
+    /* height: 60vh;
+    background: antiquewhite; */
+    color: var(--choco);
+    font-family: 'Finger Paint', cursive;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(159, 77, 18);
+    color: aliceblue;
+    height: 60px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Finger Paint', cursive;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+}
+
+#gameboard {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-rows: repeat(3, 6vw);
+    grid-template-columns: repeat(3, 6vw);
+    font-family: 'Finger Paint', cursive;
+    color: rgb(121, 61, 18);
+    position: relative;
+    /* width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px; */
+
+}
+
+.box {
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--orange);
+    font-size: 120px;
+    border-right: 4px solid;
+    border-bottom: 4px solid; */
+
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+/* .box:nth-child(3n) {
+    border-right: none;
+}
+
+.box:nth-child(6)~.box {
+    border-bottom: none;
+} */
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #9a4d16;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--choco);
+    color: antiquewhite;
+    background-color: #9a4d16;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+
+.info {
+    font-size: 36px;
+    margin-top: 4rem;
+    font-weight: bold;
+    font-family: 'Finger Paint', cursive;
+}
+
+.imgbox img {
+    width: 0;
+    transition: ease-in-out 800ms;
+
+}
+
+/* media queries */
+@media screen and (max-width: 900px) {
+
+    nav {
+        height: 54px;
+        font-size: 20px;
+        display: flex;
+    }
+
+    #gameboard {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    .box {
+        font-size: 12vw;
+    }
+
+
+    element.style {
+        width: 125px;
+    }
+}
+
+h1 {
+    font-size: 28px;
+}
+
+button {
+    font-size: 16px;
+}
